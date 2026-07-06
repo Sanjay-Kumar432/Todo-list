@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+        <h3 id="welcomeUser"></h3>
+        <button id="logoutBtn">Logout</button>
+    </div>
+        <header>
+            <div class="title">
+                <i class="fa-solid fa-clipboard-check"></i>
+            <div class="header">
+                <div class="header-left">
+                    <h2> Your To-Do List</h2>
+                    <p>Stay organized. Get things done 🚀</p>
+                </div>
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text"  id="searchInput" placeholder="Search tasks...">
+            </div>
+
+            </div>
+            </div>
+    </header>
+        <section class="task-input">
+            <input id="taskInput" type="text" placeholder="What do you want to do?">
+                <button id="addBtn"> Add Task</button>
+        </section>
+        <section class="stats">
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                    <span>Total</span>
+            </div>
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                    <span>Completed</span>
+            </div>
+            <div class="stat-card">
+                <h3 id="pendingTasks">0</h3>
+                    <span>Pending</span>
+            </div>
+        </section>
+        <section class="filters">
+            <button id="allBtn" class="active">All</button>
+            <button id="pendingBtn">Pending</button>
+            <button id="completedBtn">Completed</button>
+        </section>
+        <section class="tasks" id="taskContainer">
+        </section>
+    </div>
+    <script src="../JS/index.js"></script>
+</body>
+</html>
